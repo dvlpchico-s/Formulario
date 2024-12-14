@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Pesquisa</title>
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Formulário</h1>
+    <p id="description">Obrigado por ajudar a colher dados da pesquisa</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Nome<input id="name" type="text" placeholder="Digite seu nome" required></label>
+            <label id="email-label">E-mail<input id="email" type="email" placeholder="Digite seu E-mail" required></label>
+            <label id="number-label">Idade (opcional)<input id="number" type="number" min="13" max="120" placeholder="Idade"></label>
+            <label>Qual opção melhor descreve sua função atual?
+                <select id="dropdown">
+                    <option value="">Selecione a função atual</option>
+                    <option value="1">Estudante</option>
+                    <option value="2">Trabalho em tempo integral</option>
+                    <option value="3">Aluno em tempo integral</option>
+                    <option value="4">Prefiro não dizer</option>
+                    <option value="5">Outros</option>
+                </select>
+            </label>
+            <label id="radio">Você recomendaria o freeCodeCamp para um amigo?</label>
+            <label id="radio"><input name="Definitely" type="radio" value="1"> Com certeza</label>
+            <label id="radio"><input name="Definitely" type="radio" value="2"> Talvez</label>
+            <label id="radio"><input name="Definitely" type="radio" value="3"> Não tenho certeza</label>
+            <label for="referrer">Qual é o seu recurso favorito do freeCodeCamp?
+                <select id="referrer" name="referrer">
+                    <option value="">(selecione uma opção)</option>
+                    <option value="1">Desafios</option>
+                    <option value="2">Projetos</option>
+                    <option value="3">Comunidade</option>
+                    <option value="4">Open Source</option>
+                </select>
+            </label>
+            <label>O que você gostaria de ver melhorado? (Marque todas as que se aplicam)</label>
+            <label for="Front-end Projects"><input id="Front-end Projects" type="checkbox" name="Front-end Projects" class="inline" value="0" /> Projetos Front-end</label>
+            <label for="Back-end Projects"><input id="Back-end Projects" type="checkbox" name="Back-end Projects" class="inline" value="1" /> Projetos Back-end</label>
+            <label for="Data Visualization"><input id="Data Visualization" type="checkbox" name="Data Visualization" class="inline" value="2" /> Visualização de Dados</label>
+            <textarea>Digite seu comentário aqui...</textarea>
+            <button id="submit" type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
